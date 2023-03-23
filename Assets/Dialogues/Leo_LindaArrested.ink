@@ -1,0 +1,1 @@
+This bitch had it coming. I hope she rots in jail!
