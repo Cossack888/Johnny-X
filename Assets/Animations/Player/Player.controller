@@ -90,6 +90,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: WeaponDrawn
     m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: hanging
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -391969152955360332}
   m_Solo: 0
@@ -145,6 +148,9 @@ AnimatorStateTransition:
     m_EventTreshold: 0
   - m_ConditionMode: 1
     m_ConditionEvent: isJumping
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: ledgeClimbing
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 4966790388313652704}
@@ -334,6 +340,9 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 1
     m_ConditionEvent: WeaponDrawn
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: isJumping
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6371010990754231992}
@@ -694,7 +703,7 @@ AnimatorStateMachine:
     m_Position: {x: 0, y: -100, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -3508095829445706594}
-    m_Position: {x: -190, y: 40, z: 0}
+    m_Position: {x: -250, y: 30, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6371010990754231992}
     m_Position: {x: -280, y: -30, z: 0}
@@ -712,7 +721,7 @@ AnimatorStateMachine:
     m_Position: {x: -240, y: -240, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -8116052729698464292}
-    m_Position: {x: -205, y: -175, z: 0}
+    m_Position: {x: -360, y: -170, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -411883804147738669}
     m_Position: {x: -400, y: -110, z: 0}
@@ -1372,6 +1381,15 @@ AnimatorStateTransition:
     m_EventTreshold: 0.01
   - m_ConditionMode: 2
     m_ConditionEvent: dead
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: hanging
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: isJumping
+    m_EventTreshold: 0
+  - m_ConditionMode: 2
+    m_ConditionEvent: ledgeClimbing
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -6371010990754231992}

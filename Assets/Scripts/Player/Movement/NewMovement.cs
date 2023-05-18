@@ -101,7 +101,7 @@ public class NewMovement : MonoBehaviour
 
 
 		
-		if (Input.GetKey(KeyCode.W) && !controller.m_Grounded)
+		if (Input.GetKey(KeyCode.W) && !controller.m_Grounded && !weaponDrawn)
         {
 			hands.SetActive(true);
         }
@@ -222,7 +222,7 @@ public class NewMovement : MonoBehaviour
 			animator.SetBool("FacingLeft", false);
 		}
 
-		if (Input.GetKeyDown(KeyCode.LeftControl))
+		/*if (Input.GetKeyDown(KeyCode.LeftControl))
 		{
 			crouch = true;
 			animator.SetBool("isCrouching", true);
@@ -232,7 +232,7 @@ public class NewMovement : MonoBehaviour
 			crouch = false;
 			animator.SetBool("isCrouching", false);
 		}
-
+		*/
 		if (Input.GetButtonDown("Draw") && weaponDrawn == false && inv.carryBox==false)
 		{
 			DrawWeapon();

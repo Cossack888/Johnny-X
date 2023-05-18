@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4482970236620294101}
   - component: {fileID: -7345586120329348448}
   - component: {fileID: 3404092115081302192}
+  - component: {fileID: 6269170911333489415}
   m_Layer: 3
   m_Name: Falling ground
   m_TagString: fallingGround
@@ -45,7 +46,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 8045536275868106749}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 78a0c29acc5f964438cc0d83e0c3c7fe, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -130,7 +131,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 78a0c29acc5f964438cc0d83e0c3c7fe, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -161,3 +162,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2869d1f37bfc1c24bb272f6e9b26113b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6269170911333489415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8045536275868106749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 644fb3e9d60d0e443bc1fb7eddd4c0c7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wait: 0.1

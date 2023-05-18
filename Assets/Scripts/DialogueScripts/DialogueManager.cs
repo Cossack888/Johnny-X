@@ -71,6 +71,10 @@ public class DialogueManager : MonoBehaviour
         {
             Button choiceButton = Instantiate(buttonPrefab) as Button;
             choiceButton.transform.SetParent(this.transform, false);
+            
+                
+            
+          
 
             Text choiceText = choiceButton.GetComponentInChildren<Text>();
             choiceText.text = choice.text;

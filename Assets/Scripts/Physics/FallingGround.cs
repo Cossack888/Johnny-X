@@ -8,6 +8,10 @@ public class FallingGround : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("fallingGround"))
         {
+
+
+
+
             collision.gameObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
             collision.gameObject.GetComponent<Rigidbody2D>().freezeRotation = true;
             collision.gameObject.GetComponent<Rigidbody2D>().gravityScale = 3;
